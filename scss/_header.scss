@@ -1,0 +1,39 @@
+header.site-header {
+  background-color: #4799FA;
+  // padding-top: 40px;
+  // padding-bottom: 40px;
+  padding: 40px 80px;
+
+  > .logo {
+    
+  }
+  > nav.inline-nav {
+    > ul {
+      > li {
+        > a {
+          color: #fff;
+        }
+      }
+    }
+  }
+  > .searchform {
+    
+  }
+}
+
+@supports(display: grid) {
+  header.site-header {
+    display: grid; 
+    grid-template-columns: repeat(12, 1fr);
+    align-items: center;
+    > .logo {
+      grid-column: 1 / span 2;
+    } 
+    > nav.inline-nav {
+      grid-column: 4 / span 6;
+    }
+    > .searchform {
+      grid-column: 11 / span 2;
+    }
+  }
+}

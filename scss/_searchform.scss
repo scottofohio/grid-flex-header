@@ -1,0 +1,22 @@
+.searchform {
+  position: relative;
+  input {
+    background: none;
+    border: none;
+    border-bottom: solid 2px #fff;
+    width: 100%;
+    padding-bottom: 10px;
+    
+  }
+   label {
+    position: absolute;
+    color: #fff;
+    font-weight: 700;
+
+    &:before {
+      content: "\f002";
+      padding-right: 10px;
+      font-family: "fontawesome";
+    }
+  }
+}
